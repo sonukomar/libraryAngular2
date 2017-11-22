@@ -1,0 +1,59 @@
+{
+    "userList": [{
+            "name": "Sonu Kumar",
+            "mid": "M1032158",
+            "vertical": "TTH",
+            "isAdmin": "true"
+        },
+        {
+            "name": "Vicky Kumar",
+            "mid": "M1032159",
+            "vertical": "TTH",
+            "isAdmin": "false"
+        },
+        {
+            "name": "Vinod",
+            "mid": "M1032155",
+            "vertical": "TTH",
+            "isAdmin": "false"
+        },
+        {
+            "name": "Panjak",
+            "mid": "M1032154",
+            "vertical": "TTH",
+            "isAdmin": "false"
+        },
+        {
+            "name": "Ritika Singh",
+            "mid": "M1032153",
+            "vertical": "TTH",
+            "isAdmin": "false"
+        }
+    ],
+
+    "userCredentials": [{
+            "email": "sonukomar@gmail.com",
+            "name": "Sonu Kumar",
+            "password": "sonu",
+            "isAdmin": "true"
+        },
+        {
+            "email": "ritikasingh@gmail.com",
+            "password": "ritika",
+            "name": "Ritika Singh",
+            "isAdmin": "true"
+        },
+        {
+            "email": "vicky@gmail.com",
+            "name": "Vicky Kumar",
+            "password": "vicky",
+            "isAdmin": "false"
+        },
+        {
+            "email": "anubhav@gmail.com",
+            "name": "Anubhav",
+            "password": "anubhav",
+            "isAdmin": "true"
+        }
+    ]
+}

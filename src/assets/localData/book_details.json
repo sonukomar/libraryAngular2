@@ -1,0 +1,59 @@
+{
+    "books": [{
+            'name': 'Introduction to Angular',
+            'ISBN': 'ASDF1234ASD',
+            'author': 'Ramesh Shippy',
+            'description': 'This is angular js book which is very good book',
+            'image': '../../../assets/books/angular.svg',
+            'category': 'Technology'
+        },
+        {
+            'name': 'HTML 5',
+            'ISBN': 'SD112ASDAS',
+            'author': 'Mike Tension',
+            'description': 'This is angular js book which is very good book',
+            'image': '../../../assets/books/html.png',
+            'category': 'Technology'
+        },
+        {
+            'name': 'Python',
+            'ISBN': 'SD112ASDAS',
+            'author': 'Mike Tension',
+            'description': 'This is angular js book which is very good book',
+            'image': '../../../assets/books/python.png',
+            'category': 'Technology'
+        },
+        {
+            'name': 'Django',
+            'ISBN': 'SD112ASDAS',
+            'author': 'Mike Tension',
+            'description': 'This is angular js book which is very good book',
+            'image': '../../../assets/books/django.png',
+            'category': 'Technology'
+        },
+        {
+            'name': 'Node Js',
+            'ISBN': 'SD112ASDAS',
+            'author': 'Mike Tension',
+            'description': 'This is angular js book which is very good book',
+            'image': '../../../assets/books/node.png',
+            'category': 'Technology'
+        },
+        {
+            'name': 'Javascript',
+            'ISBN': 'SD112ASDAS',
+            'author': 'Mike Tension',
+            'description': 'This is angular js book which is very good book',
+            'image': '../../../assets/books/js.png',
+            'category': 'Technology'
+        },
+        {
+            'name': 'CSS 3',
+            'ISBN': 'SD112ASDAS',
+            'author': 'Mike Tension',
+            'description': 'This is angular js book which is very good book',
+            'image': '../../../assets/books/css.png',
+            'category': 'Technology'
+        }
+    ]
+}

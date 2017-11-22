@@ -1,0 +1,31 @@
+<div class="row" style="margin-top:2%;margin-bottom:2%;">
+    <div class="col-md-offset-2 col-md-4">
+        <!-- <h2 class="pull-left">Search</h2> -->
+        <form>
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+                    <input type="text" class="form-control" id="exampleInputEmail3" [(ngModel)]="filterModel" name="filter" (ngModelChange)="updateFilter($event)" placeholder="Enter book name">
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <div class="clearfix"></div>
+    <hr />
+</div>
+<div class="row">
+    <div class="col-md-3 bookHolder" *ngFor="let book of books | filterBook:filterArgs let i = index" (mouseenter) ="showBookHolder(i) " (mouseleave)="hideBookHolder(i) ">
+        <img style="width:35%; " src=" {{book.image}} " alt=" ">
+
+        <h3 style="color:black;text-decoration:underline; ">{{book.name}}</h3>
+
+        <h6 *ngIf="!showBorrowButton[i] "> {{book.description}}</h6>
+        <h6 *ngIf="!showBorrowButton[i] "> {{book.author}}</h6>
+        <h6 *ngIf="!showBorrowButton[i] "> {{book.ISBN}}</h6>
+        <h6 *ngIf="!showBorrowButton[i] "> {{book.category}}</h6>
+        <button class="btn btn-primary " *ngIf="showBorrowButton[i] " type="text ">Borrow Book</button>
+    </div>
+</div>

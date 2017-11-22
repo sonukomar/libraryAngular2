@@ -1,0 +1,26 @@
+body {
+    color: black;
+}
+
+.bookHolder {
+    padding: 1%;
+    border: 2px lightgrey solid;
+    border-radius: 10px;
+    box-shadow: 9px 5px 3px #6d626229;
+    margin-top: 9px;
+    margin-left: 6%;
+    height: 310px;
+    transition: background 1s, transform 1s;
+}
+
+.bookHolder:hover {
+    background: rgba(122, 23, 78, 0.14);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+
+}
+
+h6 {
+    color: black;
+}

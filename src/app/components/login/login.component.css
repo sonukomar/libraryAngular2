@@ -1,0 +1,22 @@
+div.backdrop {
+    height: 200%;
+    width: 101%;
+    background: url(/../assets/bg3.jpg)!important;
+    position: fixed;
+    margin-top: -9%;
+    z-index: -10;
+    opacity: 0.6;
+    margin-left: -1%;
+}
+
+.loginForm {
+    margin-top: 10%;
+    /* color: white; */
+}
+
+.loginForm .loginBlock {
+    background: #b0829ccc;
+    padding-top: 83px;
+    border-radius: 7px;
+    box-shadow: 10px 5px 3px #56484885;
+}

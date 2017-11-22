@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="col-sm-2 sideBar">
+        <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+            <li role="presentation" class="disabledText"> Dashboard</li>
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Search Book</a></li>
+            <li role="presentation"><a href="#">Borrow Book</a></li>
+            <li role="presentation"><a href="#">Return Book</a></li>
+            <hr />
+            <li *ngIf='isAdmin' role="presentation" class="disabledText">Admin Section</li>
+            <li *ngIf='isAdmin' role="presentation"><a href="/add-book">Add Book</a></li>
+            <li *ngIf='isAdmin' role="presentation"><a href="/remove-book">Remove Book</a></li>
+        </ul>
+
+    </div>
+    <div class="col-sm-10 mainContaint">
+        <h2 class="text-left" style="margin-top:-6px;">Book Cateogires</h2>
+        <hr>
+        <div class="col-sm-3">
+            <a href="/books">
+                <img class="img-circle" src="../../../assets/technology.png" alt="">
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="/books">
+                <img class="img-circle" src="../../../assets/fiction.png" alt="">
+            </a>
+
+        </div>
+        <div class="col-sm-3">
+            <a href="/books">
+                <img class="img-circle" src="../../../assets/spritual.jpg" style="width:42%;border-radius:0;margin-top:12px;" alt="">
+            </a>
+
+        </div>
+        <div class="col-sm-3">
+            <a href="/books">
+                <img class="img-circle" src="../../../assets/cook.jpg" alt="">
+            </a>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-3">
+            <a href="/books">
+                <img class="img-circle" src="../../../assets/motivation.jpg" alt="">
+            </a>
+
+        </div>
+        <div class="col-sm-3">
+            <a href="/books">
+                <img class="img-circle" src="../../../assets/bio.png" style="width: 88%;margin-top: 66px;border-radius:0" alt="">
+            </a>
+
+        </div>
+        <div class="col-sm-3">
+            <a href="/books">
+                <img class="img-circle" src="../../../assets/motivation.jpg" alt="">
+            </a>
+
+        </div>
+        <div class="col-sm-3">
+            <a href="/books">
+                <img class="img-circle" src="../../../assets/motivation.jpg" alt="">
+            </a>
+
+        </div>
+    </div>
+</div>

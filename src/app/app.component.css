@@ -1,0 +1,22 @@
+.header {
+    background: #7a174e;
+    padding: 1%;
+    text-shadow: 1px 1px 6px #bcecdc;
+    color: aliceblue;
+    margin: 0;
+    width: 100%;
+}
+
+.userDetails {
+    font-size: 14px;
+}
+
+a {
+    color: white;
+}
+
+a span {
+    font-size: 27px;
+    margin-right: 7px;
+    margin-top: 27px;
+}

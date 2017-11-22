@@ -1,0 +1,16 @@
+.addBookForm {
+    padding: 2%;
+    background: #7a174e42;
+    margin-top: 38px;
+    border-radius: 10px;
+    box-shadow: 9px 5px 5px #d5cfcf;
+}
+
+label{
+  color:transparent;
+}
+
+h2{
+  color:black;
+}
+

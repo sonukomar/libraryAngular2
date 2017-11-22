@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-md-4 col-md-offset-4 addBookForm">
+        <form>
+            <h2 class="text-left">Add Book</h2>
+            <hr />
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" [(ngModel)]='bookName' name="name" id="name" placeholder="Enter book Name">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" [(ngModel)]='bookAuthor' name="desc " id="description" placeholder="Author">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" [(ngModel)]='bookDescription' name="desc" id="description" placeholder="Enter book description">
+            </div>
+            <div class="form-group">
+                <label for="ISBN">ISBN</label>
+                <input type="text" class="form-control" [(ngModel)]='bookISBN' id="ISBN" name="ISBN" placeholder="ISBN">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <input type="text" class="form-control" [(ngModel)]='bookCategory' name="cat " id="category" placeholder="category">
+            </div>
+            <div class="form-group">
+                <label for="MRP">MRP</label>
+                <input type="text" class="form-control" [(ngModel)]='bookMRP' name="mrp" id="MRP" placeholder="MRP">
+            </div>
+            <button type="submit" (click)="addBook();" class="btn btn-default">Add Book</button>
+        </form>
+    </div>
+</div>
