@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import 'sweetalert';
+import { Output } from '@angular/core/src/metadata/directives';
+import { EventEmitter } from 'selenium-webdriver';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-add-remove-book',
@@ -7,7 +10,6 @@ import 'sweetalert';
   styleUrls: ['./add-remove-book.component.css']
 })
 export class AddRemoveBookComponent implements OnInit {
-  tempBookObject: Book;
   bookName: string;
   bookISBN: string;
   bookDescription: string;
@@ -15,38 +17,24 @@ export class AddRemoveBookComponent implements OnInit {
   bookMRP: number;
   bookAuthor: string;
 
-  constructor() {
-    this.tempBookObject.Name = 'sonu';
-    this.tempBookObject.ISBN = 'sonu';
-    this.tempBookObject.Description = 'sonu';
-    this.tempBookObject.Category = 'sonu';
-    this.tempBookObject.MRP = 12;
-    this.tempBookObject.Author = 'sonu';
+
+  bookCreation: Book;
+
+  constructor(private router: Router) {
+
   }
 
   ngOnInit() {
-    this.tempBookObject.Name = "sonu";
-    this.tempBookObject.ISBN = "sonu";
-    this.tempBookObject.Description = "sonu";
-    this.tempBookObject.Category = "sonu";
-    this.tempBookObject.MRP = 12;
-    this.tempBookObject.Author = "sonu";
+
   }
 
   addBook() {
-
-    this.tempBookObject.Name = this.bookName;
-    this.tempBookObject.ISBN = this.bookISBN;
-    this.tempBookObject.Description = this.bookDescription;
-    this.tempBookObject.Category = this.bookCategory;
-    this.tempBookObject.MRP = this.bookMRP;
-    this.tempBookObject.Author = this.bookAuthor;
-
-    swal('Congrates!!', this.bookName + ' ' + 'Successfully added!!', 'success');
+    swal('Congrates!!', (this.bookName).toUpperCase() + ' ' + 'Successfully added!!', 'success');
+    // this.router.navigate(['/']);
   }
 }
 
-interface Book {
+export interface Book {
   Name: string;
   ISBN: string;
   Description: string;

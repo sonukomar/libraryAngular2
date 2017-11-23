@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AddRemoveBookComponent } from './components/add-remove-book/add-remove-book.component';
+import { BooksSearchComponent} from './components/books-search/books-search.component';
 
 const appRoutes: Routes = [
   {
@@ -33,6 +34,10 @@ const appRoutes: Routes = [
   {
     path: 'add-book',
     component: AddRemoveBookComponent
+  },
+  {
+    path: 'search-book',
+    component: BooksSearchComponent
   }
 ];
 

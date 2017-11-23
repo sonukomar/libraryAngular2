@@ -1,7 +1,7 @@
 import { Component , OnInit} from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { AppComponent } from '../../app.component';
-import  'sweetalert';
+import 'sweetalert';
 
 
 @Component({
@@ -25,9 +25,9 @@ export class DashboardComponent implements OnInit {
     if (isAdmin && isAdmin === 'true') {
       this.isAdmin = true;
     }
-    if(loggedIn && loggedIn != 'true'){
-      swal("Welocome"+' '+ email, "Successfully logged In!", "success");
-    }
-   
+
+      swal('Welcome'+' '+ email, 'Successfully logged In!', 'success');
+
+
   }
 }

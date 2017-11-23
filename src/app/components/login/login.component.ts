@@ -52,6 +52,15 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  public adminLogin() {
+    this.appComponent.isLoggedIn = true;
+    this.isAdmmin = true;
+    sessionStorage.setItem('isAdmin', 'true');
+    sessionStorage.setItem('isLoggedIn', 'true');
+    sessionStorage.setItem('email', 'Facebook User');
+    this.router.navigate(['/dashboard']);
+  }
+
 
   ngOnInit() {
     const loggedIn = sessionStorage.getItem('isLoggedIn');

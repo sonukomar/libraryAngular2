@@ -17,7 +17,7 @@
     <hr />
 </div>
 <div class="row">
-    <div class="col-md-3 bookHolder" *ngFor="let book of books | filterBook:filterArgs let i = index" (mouseenter) ="showBookHolder(i) " (mouseleave)="hideBookHolder(i) ">
+    <div class="col-md-3 bookHolder" *ngFor="let book of books | filterBook:filterArgs let i = index" (mouseenter)="showBookHolder(i) " (mouseleave)="hideBookHolder(i) ">
         <img style="width:35%; " src=" {{book.image}} " alt=" ">
 
         <h3 style="color:black;text-decoration:underline; ">{{book.name}}</h3>
@@ -26,6 +26,6 @@
         <h6 *ngIf="!showBorrowButton[i] "> {{book.author}}</h6>
         <h6 *ngIf="!showBorrowButton[i] "> {{book.ISBN}}</h6>
         <h6 *ngIf="!showBorrowButton[i] "> {{book.category}}</h6>
-        <button class="btn btn-primary " *ngIf="showBorrowButton[i] " type="text ">Borrow Book</button>
+        <button class="btn btn-primary " *ngIf="showBorrowButton[i] " type="text " (click)="borrowBook($event,book);">Borrow Book</button>
     </div>
 </div>

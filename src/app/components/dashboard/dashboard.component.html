@@ -3,13 +3,15 @@
         <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
             <li role="presentation" class="disabledText"> Dashboard</li>
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Search Book</a></li>
+            <li role="presentation"><a href="/search-book">Search Book</a></li>
             <li role="presentation"><a href="#">Borrow Book</a></li>
             <li role="presentation"><a href="#">Return Book</a></li>
             <hr />
             <li *ngIf='isAdmin' role="presentation" class="disabledText">Admin Section</li>
             <li *ngIf='isAdmin' role="presentation"><a href="/add-book">Add Book</a></li>
             <li *ngIf='isAdmin' role="presentation"><a href="/remove-book">Remove Book</a></li>
+            <li *ngIf='isAdmin' role="presentation"><a href="/remove-book">Add User</a></li>
+            <li *ngIf='isAdmin' role="presentation"><a href="/remove-book">Remove User</a></li>
         </ul>
 
     </div>
